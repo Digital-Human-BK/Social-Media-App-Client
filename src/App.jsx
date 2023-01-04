@@ -1,11 +1,20 @@
-function App() {
-  const obj = {
-    a: 1,
-    b: 2,
-  };
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./scenes/homePage";
+import LoginPage from "./scenes/loginPage";
+import ProfilePage from "./scenes/profilePage";
 
-  console.log(obj);
-  return <div>Hello</div>;
+function App() {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/profile/:userId" element={<ProfilePage />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
