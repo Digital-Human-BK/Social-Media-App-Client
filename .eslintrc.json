@@ -18,8 +18,10 @@
   "rules": {
     "import/no-extraneous-dependencies": "off",
     "import/no-unresolved": "off",
-    "no-console": 0,
-    "react/react-in-jsx-scope": 0,
+    "no-console": "off",
+    "no-param-reassign": "off",
+    "react/react-in-jsx-scope": "off",
+    "no-underscore-dangle": "off",
     "prettier/prettier": [
       "error",
       {
