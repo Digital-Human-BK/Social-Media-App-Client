@@ -43,6 +43,10 @@ const authSlice = createSlice({
   },
 });
 
+// selectors
+export const selectMode = (state) => state.mode;
+
+// actions
 export const { setMode, setLogin, setLogout, setFriends, setPosts, setPost } =
   authSlice.actions;
 
