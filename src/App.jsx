@@ -14,9 +14,8 @@ import ProfilePage from "./scenes/profilePage";
 
 function App() {
   const mode = useSelector(selectMode);
-  console.log(mode);
   const theme = useMemo(() => createTheme(themeSettings(mode)), [mode]);
-  console.log(theme);
+  console.log("loop");
   return (
     <div>
       <BrowserRouter>
