@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useTheme, useMediaQuery } from "@mui/material";
+import Form from "./Form";
 
 function LoginPage() {
   const theme = useTheme();
@@ -27,6 +28,7 @@ function LoginPage() {
         <Typography fontWeight="500" variant="h5" sx={{ mb: "1.5rem" }}>
           Welcome to Social Media, it&apos;s all about friendship!
         </Typography>
+        <Form />
       </Box>
     </Box>
   );
