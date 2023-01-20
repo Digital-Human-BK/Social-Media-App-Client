@@ -86,8 +86,8 @@ function UserWidget({ userId, picturePath }) {
             </Typography>
             <Typography color={medium}>{friends.length} friends</Typography>
           </Box>
-          <ManageAccountsIcon />
         </FlexBetween>
+        <ManageAccountsIcon />
 
         <Divider />
 
