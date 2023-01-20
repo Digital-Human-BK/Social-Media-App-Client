@@ -47,6 +47,7 @@ const authSlice = createSlice({
 export const selectMode = (state) => state.mode;
 
 export const selectUser = (state) => state.user;
+export const selectToken = (state) => state.token;
 
 // actions
 export const { setMode, setLogin, setLogout, setFriends, setPosts, setPost } =
