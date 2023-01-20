@@ -88,71 +88,73 @@ function UserWidget({ userId, picturePath }) {
           </Box>
         </FlexBetween>
         <ManageAccountsIcon />
-
-        <Divider />
-
-        {/* SECOND ROW */}
-        <Box p="1rem 0">
-          <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
-            <LocationOnIcon fontSize="large" sx={{ color: main }} />
-            <Typography color={medium}>{location}</Typography>
-          </Box>
-          <Box display="flex" alignItems="center" gap="1rem">
-            <WorkOutlineIcon fontSize="large" sx={{ color: main }} />
-            <Typography color={medium}>{occupation}</Typography>
-          </Box>
-        </Box>
-
-        {/* THIRD ROW */}
-        <Box p="1rem 0">
-          <FlexBetween mb="0.5rem">
-            <Typography color={medium}>
-              Who&apos;s viewed your profile
-            </Typography>
-            <Typography color={main} fontWeight="500">
-              {viewedProfile}
-            </Typography>
-          </FlexBetween>
-          <FlexBetween>
-            <Typography color={medium}>Impressions of your post</Typography>
-            <Typography color={main} fontWeight="500">
-              {impressions}
-            </Typography>
-          </FlexBetween>
-        </Box>
-
-        {/* FOURTH ROW */}
-        <Box p="1rem 0">
-          <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
-            Social Profiles
-          </Typography>
-          <FlexBetween gap="1rem" mb="0.5rem">
-            <FlexBetween gap="1rem">
-              <img src="../assets/twitter.png" alt="twitter" />
-              <Box>
-                <Typography color={main} fontWeight="500">
-                  Twitter
-                </Typography>
-                <Typography color={main}>Social Network</Typography>
-              </Box>
-            </FlexBetween>
-            <EditIcon sx={{ color: main }} />
-          </FlexBetween>
-
-          <FlexBetween gap="1rem">
-            <FlexBetween gap="1rem">
-              <img src="../assets/linkedin.png" alt="LinkedIn" />
-              <Box>
-                <Typography color={main} fontWeight="500">
-                  LinkedIn
-                </Typography>
-                <Typography color={main}>Network Platform</Typography>
-              </Box>
-            </FlexBetween>
-            <EditIcon sx={{ color: main }} />
-          </FlexBetween>
-        </Box>
       </FlexBetween>
+
+      <Divider />
+
+      {/* SECOND ROW */}
+      <Box p="1rem 0">
+        <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
+          <LocationOnIcon fontSize="large" sx={{ color: main }} />
+          <Typography color={medium}>{location}</Typography>
+        </Box>
+        <Box display="flex" alignItems="center" gap="1rem">
+          <WorkOutlineIcon fontSize="large" sx={{ color: main }} />
+          <Typography color={medium}>{occupation}</Typography>
+        </Box>
+      </Box>
+
+      <Divider />
+
+      {/* THIRD ROW */}
+      <Box p="1rem 0">
+        <FlexBetween mb="0.5rem">
+          <Typography color={medium}>Who&apos;s viewed your profile</Typography>
+          <Typography color={main} fontWeight="500">
+            {viewedProfile}
+          </Typography>
+        </FlexBetween>
+        <FlexBetween>
+          <Typography color={medium}>Impressions of your post</Typography>
+          <Typography color={main} fontWeight="500">
+            {impressions}
+          </Typography>
+        </FlexBetween>
+      </Box>
+
+      <Divider />
+
+      {/* FOURTH ROW */}
+      <Box p="1rem 0">
+        <Typography fontSize="1rem" color={main} fontWeight="500" mb="1rem">
+          Social Profiles
+        </Typography>
+        <FlexBetween gap="1rem" mb="0.5rem">
+          <FlexBetween gap="1rem">
+            <img src="../assets/twitter.png" alt="twitter" />
+            <Box>
+              <Typography color={main} fontWeight="500">
+                Twitter
+              </Typography>
+              <Typography color={main}>Social Network</Typography>
+            </Box>
+          </FlexBetween>
+          <EditIcon sx={{ color: main }} />
+        </FlexBetween>
+
+        <FlexBetween gap="1rem">
+          <FlexBetween gap="1rem">
+            <img src="../assets/linkedin.png" alt="LinkedIn" />
+            <Box>
+              <Typography color={main} fontWeight="500">
+                LinkedIn
+              </Typography>
+              <Typography color={main}>Network Platform</Typography>
+            </Box>
+          </FlexBetween>
+          <EditIcon sx={{ color: main }} />
+        </FlexBetween>
+      </Box>
     </WidgetWrapper>
   );
 }
