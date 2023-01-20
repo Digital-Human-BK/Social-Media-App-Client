@@ -1,6 +1,5 @@
 import Box from "@mui/material/Box";
 
-// eslint-disable-next-line react/prop-types
 function UserImage({ image, size = "60px" }) {
   return (
     <Box width={size} height={size}>
