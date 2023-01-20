@@ -23,6 +23,15 @@ function HomePage() {
         <Box flexBasis={isNonMobileScreens ? "26%" : undefined}>
           <UserWidget userId={_id} picturePath={picturePath} />
         </Box>
+
+        <Box
+          flexBasis={isNonMobileScreens ? "40%" : undefined}
+          mt={isNonMobileScreens ? undefined : "2rem"}
+        >
+          Main
+        </Box>
+
+        {isNonMobileScreens && <Box flexBasis="26%">Friends List</Box>}
       </Box>
     </Box>
   );
