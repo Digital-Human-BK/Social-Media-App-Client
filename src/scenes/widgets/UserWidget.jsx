@@ -3,8 +3,8 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import EditIcon from "@mui/icons-material/Edit";
+import WorkIcon from "@mui/icons-material/Work";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
 import ManageAccountsIcon from "@mui/icons-material/ManageAccounts";
 
 import Box from "@mui/material/Box";
@@ -99,7 +99,7 @@ function UserWidget({ userId, picturePath }) {
           <Typography color={medium}>{location}</Typography>
         </Box>
         <Box display="flex" alignItems="center" gap="1rem">
-          <WorkOutlineIcon fontSize="large" sx={{ color: main }} />
+          <WorkIcon fontSize="large" sx={{ color: main }} />
           <Typography color={medium}>{occupation}</Typography>
         </Box>
       </Box>
