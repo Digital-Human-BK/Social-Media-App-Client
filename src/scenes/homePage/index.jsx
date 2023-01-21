@@ -6,6 +6,7 @@ import { useMediaQuery } from "@mui/material";
 import Navbar from "../navbar";
 import { selectUser } from "../../state";
 import UserWidget from "../widgets/UserWidget";
+import MyPostWidget from "../widgets/MyPostWidget";
 
 function HomePage() {
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
@@ -25,10 +26,10 @@ function HomePage() {
         </Box>
 
         <Box
-          flexBasis={isNonMobileScreens ? "40%" : undefined}
+          flexBasis={isNonMobileScreens ? "42%" : undefined}
           mt={isNonMobileScreens ? undefined : "2rem"}
         >
-          Main
+          <MyPostWidget picturePath={picturePath} />
         </Box>
 
         {isNonMobileScreens && <Box flexBasis="26%">Friends List</Box>}
