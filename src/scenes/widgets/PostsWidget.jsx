@@ -8,6 +8,7 @@ import PostWidget from "./PostWidget";
 function PostsWidget({ userId, isProfile = false }) {
   const dispatch = useDispatch();
   const posts = useSelector(selectPosts);
+  console.log(posts);
   const token = useSelector(selectToken);
 
   const getPosts = async () => {
@@ -20,7 +21,7 @@ function PostsWidget({ userId, isProfile = false }) {
         },
       }
     );
-    const data = response.json();
+    const data = await response.json();
     dispatch(setPosts({ posts: data }));
   };
 
@@ -34,7 +35,7 @@ function PostsWidget({ userId, isProfile = false }) {
         },
       }
     );
-    const data = response.json();
+    const data = await response.json();
     dispatch(setPosts({ posts: data }));
   };
 
@@ -51,7 +52,7 @@ function PostsWidget({ userId, isProfile = false }) {
       {posts.map(
         ({
           _id,
-          uId,
+          userId: uId,
           firstName,
           lastName,
           description,
@@ -64,7 +65,7 @@ function PostsWidget({ userId, isProfile = false }) {
           <PostWidget
             key={_id}
             postId={_id}
-            userId={uId}
+            postUserId={uId}
             name={`${firstName} ${lastName}`}
             description={description}
             location={location}
