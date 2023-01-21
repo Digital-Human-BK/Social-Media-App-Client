@@ -8,6 +8,7 @@ import { selectUser } from "../../state";
 import UserWidget from "../widgets/UserWidget";
 import MyPostWidget from "../widgets/MyPostWidget";
 import PostsWidget from "../widgets/PostsWidget";
+import AdvertWidget from "../widgets/AdverWidget";
 
 function HomePage() {
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
@@ -34,7 +35,12 @@ function HomePage() {
           <PostsWidget userId={_id} />
         </Box>
 
-        {isNonMobileScreens && <Box flexBasis="26%">Friends List</Box>}
+        {isNonMobileScreens && (
+          <Box flexBasis="26%">
+            <AdvertWidget />
+            <Box m="2rem 0" />
+          </Box>
+        )}
       </Box>
     </Box>
   );
