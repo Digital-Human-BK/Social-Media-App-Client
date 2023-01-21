@@ -95,11 +95,11 @@ function UserWidget({ userId, picturePath }) {
       {/* SECOND ROW */}
       <Box p="1rem 0">
         <Box display="flex" alignItems="center" gap="1rem" mb="0.5rem">
-          <LocationOnIcon fontSize="large" sx={{ color: main }} />
+          <LocationOnIcon fontSize="large" sx={{ color: medium }} />
           <Typography color={medium}>{location}</Typography>
         </Box>
         <Box display="flex" alignItems="center" gap="1rem">
-          <WorkIcon fontSize="large" sx={{ color: main }} />
+          <WorkIcon fontSize="large" sx={{ color: medium }} />
           <Typography color={medium}>{occupation}</Typography>
         </Box>
       </Box>
